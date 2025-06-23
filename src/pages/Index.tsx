@@ -4,6 +4,16 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, CheckCircle, Users, TrendingUp, Shield, Zap, BarChart3 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { AreaChart, Area, XAxis, YAxis, ResponsiveContainer } from 'recharts';
+
+const chartData = [
+  { name: 'Oca', value: 45 },
+  { name: 'Şub', value: 52 },
+  { name: 'Mar', value: 38 },
+  { name: 'Nis', value: 65 },
+  { name: 'May', value: 58 },
+  { name: 'Haz', value: 72 },
+];
 
 const Index = () => {
   return (
@@ -12,9 +22,7 @@ const Index = () => {
       
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-velyno-light via-white to-velyno-light pt-20 pb-32">
-        <div className="absolute inset-0 opacity-50" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%235B3FF6' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-        }}></div>
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg width=%2760%27 height=%2760%27 viewBox=%270 0 60 60%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cg fill=%27none%27 fill-rule=%27evenodd%27%3E%3Cg fill=%27%235B3FF6%27 fill-opacity=%270.03%27%3E%3Ccircle cx=%2730%27 cy=%2730%27 r=%274%27/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-50"></div>
         
         <div className="container mx-auto px-4 relative">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -80,12 +88,31 @@ const Index = () => {
                         <div className="text-lg font-bold text-blue-700">₺41.5K</div>
                       </div>
                     </div>
-                    <div className="h-20 bg-gradient-to-r from-velyno-primary/10 to-velyno-secondary/10 rounded-xl flex items-end justify-around p-4">
-                      <div className="w-6 bg-velyno-primary rounded-t h-12"></div>
-                      <div className="w-6 bg-velyno-primary rounded-t h-16"></div>
-                      <div className="w-6 bg-velyno-secondary rounded-t h-10"></div>
-                      <div className="w-6 bg-velyno-secondary rounded-t h-20"></div>
-                      <div className="w-6 bg-velyno-primary rounded-t h-14"></div>
+                    <div className="h-24 rounded-xl p-2">
+                      <ResponsiveContainer width="100%" height="100%">
+                        <AreaChart data={chartData}>
+                          <defs>
+                            <linearGradient id="colorGradient" x1="0" y1="0" x2="0" y2="1">
+                              <stop offset="5%" stopColor="#5B3FF6" stopOpacity={0.3}/>
+                              <stop offset="95%" stopColor="#06B6D4" stopOpacity={0.1}/>
+                            </linearGradient>
+                          </defs>
+                          <XAxis 
+                            dataKey="name" 
+                            axisLine={false} 
+                            tickLine={false}
+                            tick={{ fontSize: 10, fill: '#64748B' }}
+                          />
+                          <YAxis hide />
+                          <Area 
+                            type="monotone" 
+                            dataKey="value" 
+                            stroke="#5B3FF6" 
+                            strokeWidth={2}
+                            fill="url(#colorGradient)" 
+                          />
+                        </AreaChart>
+                      </ResponsiveContainer>
                     </div>
                   </div>
                 </div>
