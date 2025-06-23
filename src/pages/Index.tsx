@@ -110,7 +110,7 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="feature-card">
+            <div className="feature-card group">
               <div className="w-12 h-12 bg-velyno-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <BarChart3 className="w-6 h-6 text-velyno-primary" />
               </div>
@@ -120,7 +120,7 @@ const Index = () => {
               </p>
             </div>
             
-            <div className="feature-card">
+            <div className="feature-card group">
               <div className="w-12 h-12 bg-velyno-secondary/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <Zap className="w-6 h-6 text-velyno-secondary" />
               </div>
@@ -130,7 +130,7 @@ const Index = () => {
               </p>
             </div>
             
-            <div className="feature-card">
+            <div className="feature-card group">
               <div className="w-12 h-12 bg-velyno-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <TrendingUp className="w-6 h-6 text-velyno-primary" />
               </div>
@@ -140,7 +140,7 @@ const Index = () => {
               </p>
             </div>
             
-            <div className="feature-card">
+            <div className="feature-card group">
               <div className="w-12 h-12 bg-velyno-secondary/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <Users className="w-6 h-6 text-velyno-secondary" />
               </div>
@@ -150,7 +150,7 @@ const Index = () => {
               </p>
             </div>
             
-            <div className="feature-card">
+            <div className="feature-card group">
               <div className="w-12 h-12 bg-velyno-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <BarChart3 className="w-6 h-6 text-velyno-primary" />
               </div>
@@ -160,7 +160,7 @@ const Index = () => {
               </p>
             </div>
             
-            <div className="feature-card">
+            <div className="feature-card group">
               <div className="w-12 h-12 bg-velyno-secondary/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <Shield className="w-6 h-6 text-velyno-secondary" />
               </div>
