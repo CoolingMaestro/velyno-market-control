@@ -22,7 +22,7 @@ const Features = () => {
   const features = [
     {
       icon: Layers,
-      title: "Çoklu Pazaryeri Entegrasyonu",
+      title: "Çokluu Pazaryeri Entegrasyonu",
       description: "Trendyol, Hepsiburada, n11, Amazon, GittiGidiyor ve 20+ pazaryerini tek platformdan yönetin.",
       benefits: [
         "Tek tıkla tüm pazaryerlerine ürün listesi",
