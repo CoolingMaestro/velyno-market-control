@@ -12,7 +12,7 @@ const Index = () => {
       
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-velyno-light via-white to-velyno-light pt-20 pb-32">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%235B3FF6" fill-opacity="0.03"%3E%3Ccircle cx="30" cy="30" r="4"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-50"></div>
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%235B3FF6\" fill-opacity=\"0.03\"%3E%3Ccircle cx=\"30\" cy=\"30\" r=\"4\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-50"></div>
         
         <div className="container mx-auto px-4 relative">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -181,7 +181,7 @@ const Index = () => {
             <div className="space-y-2 animate-scale-in">
               <div className="text-4xl lg:text-5xl font-bold">10.000+</div>
               <div className="text-xl opacity-90">Aktif Mağaza</div>
-              <div className="text-sm opacity-75">Türkiye'nin önde gelen e-ticaret markalarının tercihi</div>
+              <div className="text-sm opacity-75">Türkiye&apos;nin önde gelen e-ticaret markalarının tercihi</div>
             </div>
             <div className="space-y-2 animate-scale-in" style={{ animationDelay: '0.2s' }}>
               <div className="text-4xl lg:text-5xl font-bold">50M+</div>
