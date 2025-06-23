@@ -5,6 +5,10 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // GitHub Pages deployment için base path ayarı
+  // Repository adınız: velyno-market-control
+  base: mode === 'production' ? '/velyno-market-control/' : '/',
+  
   server: {
     host: "::",
     port: 8080,
